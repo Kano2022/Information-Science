@@ -6,3 +6,4 @@ For today's class, we wrote algorithm, a step-by-step directions for Dr. R to ea
 I learned the importance of clear and specific directions but it was also interesting to see the compitational thinking such as finding the pattern in this activity.
 3. Any questions??
 I don't have any questions yet, but I am excited to learn more!
+
