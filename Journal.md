@@ -166,7 +166,7 @@ def mouseClick():
         sixes=sixes+1
         print("Number of times six has been rolled", sixes
         
-        ```
+```
         
 1. What did I do today?
 I made a code on Processing of a dice that rolls on its' own and draws a graph of the number of the times each number came out.
