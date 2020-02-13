@@ -13,6 +13,8 @@ I don't have any questions yet, but I am excited to learn more!
 We programmed a dice on Sketch and tested it out, as well as playing a game where we made an  unfair dice.
 
 Below is the Program of the dice:
+
+```.py
 def setup():
     size (600,600)
     
@@ -57,6 +59,7 @@ def mouseClicked():
         circle(400,400,50)
         circle(200,300,50)
         circle(400,300,50)
+```
 
 2. What did I learn today?
 
