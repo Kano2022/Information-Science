@@ -174,3 +174,50 @@ I made a code on Processing of a dice that rolls on its' own and draws a graph o
 The thing I remeber the most was that in order to add a graph, you can type in "print", and that each time I want to change the graph, I have to change each number inside the brakets.
 3. Questions:
 How do I get better?
+
+
+# Online Computer Science 1
+
+In this class, I learnt how to represent the movement of people using a circle with a random movement.
+The task was to learn how to repeat the steps for ten circles without having to write it manually.
+From this class, I learnt that append means to "add on" to the end of the list, and in this case, it allowed me to make all ten circles randomly move without having to type them one by one.
+I still am not super sure how to use the append and loop but I think I got a bit of a hang.
+
+
+```.py
+
+#definitions of variables
+x = []
+y = []
+
+def setup():
+    size(500,500)
+    for i in range(10):
+          x.append(random(0,500))
+          y.append(random(0,500))
+        
+def draw():
+    background(255)
+    strokeWeight(2)
+    global x, y
+    
+    #FirstIndivisual
+    for i in range(10):
+        circle(x[i],y[i],40)
+        x[i] = x[i] + random(-10,10)
+        y[i] = y[i] + random(-10,10)
+        
+        if x[i] > 500:
+            x[i] = 500
+        if x[i] < 0:
+            x[i] = 0
+        if y[i] > 500:
+            y[i] = 500
+        if y[i] < 0:
+            y[i] = 0
+            
+    delay(100)
+    
+
+```
+
