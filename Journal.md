@@ -287,3 +287,32 @@ def draw():
     
 
 ```
+
+# Online Classes 2 
+In this class, I practiced the "loop" by repeating multiple similar values.
+Below is the program with some questions.
+I learnt some simple patterns;
+"for _ (any word or value) in range (__ the number you want to start, __ the number you want to end, __ By how much you want to increase):"
+When putting in vocabularies, you must
+for i in range:
+    print ("_{0 for space}".format(i))
+The question I have now is how do I change and switch around this format??
+
+```.py
+# Task One
+word = "bear"
+for i in range (101):
+    print ("bear {0}".format(i))
+#how do I do the special case and turn the other way around?
+
+# Task Two
+for i in range (1900, 2001, 1):
+    print ("The year is {0}". format(i))
+
+# Task Three
+for a in range (101):
+    for b in range (32.0, 212, 1.8):
+        print (format(a), "{0} C are {0}", format (b), "{0} F")
+#What does a "float" mean?
+
+```
