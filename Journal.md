@@ -221,3 +221,69 @@ def draw():
 
 ```
 
+# Online Class No.2 
+
+In this session, I followed the video and tried to colour code the infected population to further visualize the spread of this desiease.
+This was done by calculating the distance between two people (circles) first by using the Pythagorean theorem and setting each distance using the a, b, and c method.
+I have many questions regarding this process, and in the end, my program did not work but I will see what the problem is later on in my meetings. Some questions are within the program by using the # mark.
+
+```.py
+#definitions of variables
+x = []
+y = []
+h = [False, True] 
+
+def setup():
+    size(500,500)
+    for i in range(10):
+          x.append(random(0,500))
+          y.append(random(0,500))
+          h.append(True) 
+    #Shouldn't the append here be random??
+          
+def distance(x1, x2, y1, y2):
+    a = (x1 - x2)
+    b = (y1 - y2)
+    c = sqrt (a**2 + b**2)
+    return c
+        
+def draw():
+    background(255)
+    strokeWeight(2)
+    global x, y
+    
+    for ind in range(len(x)):
+        if h[ind] == True:
+            fill(255)
+        else:
+            fill (255, 0, 0)
+    circle(x[ind], y[ind], 40)
+    for nei in range(len(x)):
+        if nei == ind:
+            continue 
+        d = distance(x[ind], x[nei], y[ind], y[nei])
+    #What does this mean
+        if d < 40 and (h[nei] == False or h[ind] == False):
+            h[ind] = False
+            h[nei] = False 
+    
+    #FirstIndivisual
+    for i in range(10):
+        circle(x[i],y[i],40)
+        x[i] = x[i] + random(-10,10)
+        y[i] = y[i] + random(-10,10)
+        
+        if x[i] > 500:
+            x[i] = 500
+        if x[i] < 0:
+            x[i] = 0
+        if y[i] > 500:
+            y[i] = 500
+        if y[i] < 0:
+            y[i] = 0
+            
+     
+    delay(100)
+    
+
+```
